@@ -110,6 +110,39 @@ cyberpunk validate
 
 Then continue to [first project initialization](./first-project-initialization.md).
 
+## Remove an installation
+
+To remove one older release, first confirm that it is not the target of
+`current`, then remove only that release directory:
+
+```bash
+INSTALL_ROOT="$HOME/.local/share/cyberpunk-context-runners"
+CLI_TAG="vMAJOR.MINOR.PATCH"
+RELEASE_DIR="$INSTALL_ROOT/releases/$CLI_TAG"
+
+if [ "$(readlink "$INSTALL_ROOT/current")" = "$RELEASE_DIR" ]; then
+  printf 'Refusing to remove the current release; repoint current first.\n' >&2
+  exit 1
+fi
+rm -rf "$RELEASE_DIR"
+```
+
+To remove every installed release, delete the user-owned install root:
+
+```bash
+rm -rf "$HOME/.local/share/cyberpunk-context-runners"
+```
+
+Finally, manually remove this exact line from the shell startup file where you
+added it (`~/.zshrc`, `~/.bashrc`, `~/.bash_profile`, or `~/.profile`):
+
+```bash
+export PATH="$HOME/.local/share/cyberpunk-context-runners/current:$PATH"
+```
+
+Start a new shell, or reload that file and refresh command lookup, before
+checking `command -v cyberpunk` again.
+
 See [PATH troubleshooting](../guides/troubleshooting-installation-and-path.md)
 for a failed lookup and [manual tagged releases](../guides/manual-tagged-release.md)
 for maintainer release guidance.

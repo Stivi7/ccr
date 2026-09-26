@@ -21,9 +21,10 @@ Codex uses `.codex/agents/` and `.agents/skills/`; Claude Code uses
 remains the behavioral source. Local run state is intentionally separate from
 durable project memory.
 
-`[init](./init.md)` creates this output, [sync](./sync.md) refreshes selected
-registrations, and [validate](./validate.md) checks it. [Configuration](./configuration.md)
-determines which runtime adapters the commands generate. Use [drift
+[init](./init.md) creates this output, [sync](./sync.md) refreshes selected
+registrations, and [validate](./validate.md) checks it.
+[Configuration](./configuration.md) determines which runtime adapters the
+commands generate. Use [drift
 troubleshooting](../guides/troubleshooting-registrations-and-drift.md) before
 force-refreshing a generated asset, and see [runtime setup](../start-here/runtime-setup.md)
 for how users enter this flow.
