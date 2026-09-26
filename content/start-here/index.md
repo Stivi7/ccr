@@ -28,4 +28,3 @@ and release status. Then choose the page that matches your next question:
 - [Codex runtime setup](./codex.md)
 - [Claude Code runtime setup](./claude-code.md)
 - [Cursor runtime setup](./cursor.md)
-

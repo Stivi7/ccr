@@ -23,4 +23,3 @@ Its output artifact is the [work packet and result contract](../concepts/work-pa
 Fragmenter receives the plan from [The Mind](./mind.md) and supplies bounded
 jobs to [The Nexus](./nexus.md). It does not create branches, merge results, or
 dispatch agents.
-

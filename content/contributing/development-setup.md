@@ -24,4 +24,3 @@ Protocol changes belong to the canonical workflow, roles, and skills rather
 than this curated tree. Read [work packets and result contracts](../concepts/work-packets-and-result-contracts.md)
 and [Git branches and worktree isolation](../concepts/branches-and-worktrees.md)
 before making a scoped contribution.
-

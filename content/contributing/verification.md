@@ -27,4 +27,3 @@ baseline failures in the [result contract](../concepts/work-packets-and-result-c
 The [Gatekeeper](../roles/gatekeeper.md) independently reruns relevant checks;
 then [integration and delivery](../concepts/integration-and-delivery.md) reports
 only what was observed.
-

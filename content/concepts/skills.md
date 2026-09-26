@@ -25,4 +25,3 @@ while [The Gatekeeper](../roles/gatekeeper.md) uses review and delivery
 verification. Read [work packets](./work-packets-and-result-contracts.md) to
 see how a packet selects methods, and [adaptive workflow](./adaptive-workflow.md)
 to see why the selection stays proportionate.
-

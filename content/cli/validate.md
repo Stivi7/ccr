@@ -24,4 +24,3 @@ to understand checked artifacts. It belongs in [first project initialization](..
 and should follow `sync` when registrations change. For failures, use
 [registration and drift troubleshooting](../guides/troubleshooting-registrations-and-drift.md)
 and [exit behavior and diagnostics](./exit-behavior-and-diagnostics.md).
-

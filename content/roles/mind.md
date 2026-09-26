@@ -23,4 +23,3 @@ planning procedure is one of the reusable [Skills](../concepts/skills.md).
 It uses facts from [The Operator](./operator.md), submits complex plans to [The
 Interrogator](./interrogator.md), and hands approved boundaries to [The
 Fragmenter](./fragmenter.md).
-

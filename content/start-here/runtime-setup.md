@@ -23,4 +23,3 @@ Recommended path: inspect [Codex](./codex.md), [Claude Code](./claude-code.md),
 or [Cursor](./cursor.md), then use [status](../cli/status.md) to inspect
 configured state. If validation detects an unowned collision or modified
 generated asset, follow [drift troubleshooting](../guides/troubleshooting-registrations-and-drift.md).
-

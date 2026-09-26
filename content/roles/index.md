@@ -31,4 +31,3 @@ Recommended path: [Nexus](./nexus.md) -> [Fixer](./fixer.md) -> [Operator](./ope
 
 The [adaptive workflow](../concepts/adaptive-workflow.md) decides which of
 these responsibilities a task needs.
-

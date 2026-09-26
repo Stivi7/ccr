@@ -23,4 +23,3 @@ artifact when evidence is stale or contradictory. Its method is part of
 Operator supplies [The Mind](./mind.md) with planning facts and [The
 Gatekeeper](./gatekeeper.md) with baseline context. It does not choose a new
 architecture or implement the requested change.
-

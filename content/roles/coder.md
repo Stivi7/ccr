@@ -23,4 +23,3 @@ and result commit. Its reusable methods are collected in [Skills](../concepts/sk
 Coder shares the implementation boundary with [The Daemon](./daemon.md), [The
 Neon](./neon.md), and [The Grid Master](./grid-master.md); [The Gatekeeper](./gatekeeper.md)
 reviews the result next.
-

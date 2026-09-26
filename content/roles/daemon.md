@@ -23,4 +23,3 @@ test methods collected in [Skills](../concepts/skills.md).
 It works alongside [The Coder](./coder.md) and [The Neon](./neon.md) when a
 defined interface spans both boundaries. [The Gatekeeper](./gatekeeper.md)
 reviews its evidence before integration.
-

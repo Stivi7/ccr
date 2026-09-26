@@ -34,4 +34,3 @@ checks.
 Next, give the coding agent a bounded request through [your first Nexus
 task](./first-nexus-task.md). If initialization or validation fails, start
 with [registration and drift troubleshooting](../guides/troubleshooting-registrations-and-drift.md).
-

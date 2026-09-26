@@ -26,4 +26,3 @@ project structure](./generated-project-structure.md) for output artifacts, and
 [first project initialization](../start-here/first-project-initialization.md)
 for the next commands. If a registration conflicts or drift is reported, use
 [registration troubleshooting](../guides/troubleshooting-registrations-and-drift.md).
-

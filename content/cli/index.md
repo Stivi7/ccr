@@ -30,4 +30,3 @@ to inspect what changed.
 Start with [first project initialization](../start-here/first-project-initialization.md)
 for the user journey, or [installation troubleshooting](../guides/troubleshooting-installation-and-path.md)
 when the command cannot be found.
-

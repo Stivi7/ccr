@@ -19,4 +19,3 @@ provider session or guarantee native-agent availability. Run [validate](../cli/v
 after setup, keep the [runtime setup](./runtime-setup.md) distinction in mind,
 and follow [registration and drift troubleshooting](../guides/troubleshooting-registrations-and-drift.md)
 before replacing a modified generated file.
-

@@ -23,4 +23,3 @@ findings, using the plan-review method in [Skills](../concepts/skills.md).
 Interrogator works beside [The Mind](./mind.md), which revises the design, and
 [The Fragmenter](./fragmenter.md), which receives an approved plan. It does not
 implement or merge work.
-

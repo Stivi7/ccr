@@ -24,4 +24,3 @@ and rollback notes; its method is in [Skills](../concepts/skills.md).
 Grid Master works alongside [The Coder](./coder.md) and provides operational
 evidence for [The Gatekeeper](./gatekeeper.md). External deployment remains a
 separate authority step in [integration and delivery](../concepts/integration-and-delivery.md).
-

@@ -23,4 +23,3 @@ does not promise a runtime can delegate.
 [The Operator](../roles/operator.md) refreshes repository facts, and [The
 Nexus](../roles/nexus.md) curates delivery evidence. The next lifecycle stage
 after a result is [verification and Gatekeeper review](./verification-and-gatekeeper.md).
-

@@ -24,4 +24,3 @@ project structure](./generated-project-structure.md) for counted artifacts,
 and [first project initialization](../start-here/first-project-initialization.md)
 for the normal `init -> validate -> status` path. If generated state is drifted,
 follow [registration troubleshooting](../guides/troubleshooting-registrations-and-drift.md).
-

@@ -29,4 +29,3 @@ For a new product or architectural idea, ask The Fixer to help define it
 before implementation. Then trace the resulting [work packet and result
 contract](../concepts/work-packets-and-result-contracts.md) through review and
 delivery.
-

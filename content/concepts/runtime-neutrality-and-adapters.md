@@ -22,4 +22,3 @@ policy and generated-state inspection without claiming live capability.
 Generated paths and hashes are recorded as an artifact. [Validate](../cli/validate.md)
 detects drift and collisions; [registration troubleshooting](../guides/troubleshooting-registrations-and-drift.md)
 explains the safe response. The same evidence distinction shapes [native dispatch](./native-dispatch-and-concurrency.md).
-

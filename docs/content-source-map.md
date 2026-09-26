@@ -13,14 +13,14 @@ import, mirror, or publication mechanism.
 
 ## Manually reviewed sources
 
-| Public content cluster | Canonical source reviewed | Facts carried into content |
-| --- | --- | --- |
-| Landing, Start Here, runtime setup | `README.md`; `cyberpunk`; `templates/.cyberpunk/config.yml` | Runtime-neutral boundary, supported registrations, initialization flow, configured intent versus observed capability. |
-| Installation, upgrading, PATH guide | `README.md`; `cyberpunk`; `lib/project-paths.bash` | CLI layout requires the script beside `lib/`; commands and version output; tagged archive guidance remains forthcoming until a real tag exists. |
-| CLI command reference | `cyberpunk`; `lib/config.bash`; `lib/generated-assets.bash`; `lib/project-paths.bash` | `init`, `sync`, `validate`, `status`, help/version options, safety behavior, configuration, generated assets, diagnostics. |
-| Generated project structure and drift guide | `cyberpunk`; `lib/generated-assets.bash`; templates under `templates/` | Canonical files, adapters, generated manifest hashes, collisions, drift, reviewed protocol upgrade behavior. |
-| Concepts and roles | `templates/.cyberpunk/workflow.md`; `templates/agents/*.md`; `templates/skills/README.md`; `templates/skills/core/*/SKILL.md` | Adaptive workflow, role ownership, worktree/review/delivery evidence, skill precedence, memory boundaries. |
-| Contributor guidance and release process | `README.md`; `tests/run.sh`; `tests/*.bash` | Dependency-free CLI suite command and the separation between local documentation work, release evidence, and external authority. |
+| Public content cluster                      | Canonical source reviewed                                                                                                     | Facts carried into content                                                                                                                      |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Landing, Start Here, runtime setup          | `README.md`; `cyberpunk`; `templates/.cyberpunk/config.yml`                                                                   | Runtime-neutral boundary, supported registrations, initialization flow, configured intent versus observed capability.                           |
+| Installation, upgrading, PATH guide         | `README.md`; `cyberpunk`; `lib/project-paths.bash`                                                                            | CLI layout requires the script beside `lib/`; commands and version output; tagged archive guidance remains forthcoming until a real tag exists. |
+| CLI command reference                       | `cyberpunk`; `lib/config.bash`; `lib/generated-assets.bash`; `lib/project-paths.bash`                                         | `init`, `sync`, `validate`, `status`, help/version options, safety behavior, configuration, generated assets, diagnostics.                      |
+| Generated project structure and drift guide | `cyberpunk`; `lib/generated-assets.bash`; templates under `templates/`                                                        | Canonical files, adapters, generated manifest hashes, collisions, drift, reviewed protocol upgrade behavior.                                    |
+| Concepts and roles                          | `templates/.cyberpunk/workflow.md`; `templates/agents/*.md`; `templates/skills/README.md`; `templates/skills/core/*/SKILL.md` | Adaptive workflow, role ownership, worktree/review/delivery evidence, skill precedence, memory boundaries.                                      |
+| Contributor guidance and release process    | `README.md`; `tests/run.sh`; `tests/*.bash`                                                                                   | Dependency-free CLI suite command and the separation between local documentation work, release evidence, and external authority.                |
 
 ## Review procedure
 
@@ -29,4 +29,3 @@ its `cyberpunk --version` output, command behavior, and README with this map.
 Record a new release value only through the dedicated release-finalization
 packet after its cross-repository and archive evidence succeeds. Do not replace
 this manual review with an automated synchronization behavior.
-

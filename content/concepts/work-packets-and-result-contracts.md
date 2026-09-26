@@ -24,4 +24,3 @@ keeps one mutable job separate from another.
 The [Gatekeeper](../roles/gatekeeper.md) reviews the actual result commit and
 evidence. Approved results proceed to [integration and delivery](./integration-and-delivery.md);
 unresolved findings return to the scoped worker.
-

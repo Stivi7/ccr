@@ -24,4 +24,3 @@ Check [configuration](./configuration.md) and [generated project structure](./ge
 for the artifact involved. Continue with [first project initialization](../start-here/first-project-initialization.md)
 or use [installation and PATH troubleshooting](../guides/troubleshooting-installation-and-path.md)
 when the command is not resolving at all.
-

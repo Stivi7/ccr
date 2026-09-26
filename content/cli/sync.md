@@ -26,4 +26,3 @@ manifest and adapter outputs. Run [validate](./validate.md) next, and consult
 [registration and drift troubleshooting](../guides/troubleshooting-registrations-and-drift.md)
 if the command refuses an unsafe replacement. The [runtime setup](../start-here/runtime-setup.md)
 journey explains what sync does not prove.
-

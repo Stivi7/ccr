@@ -30,4 +30,3 @@ discovery](./requirements-discovery.md) -> [Work packets](./work-packets-and-res
 
 Use the Graph and backlinks to follow a role, artifact, or workflow stage in a
 different order when you already know your question.
-

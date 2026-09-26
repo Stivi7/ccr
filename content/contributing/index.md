@@ -24,4 +24,3 @@ conventions](./documentation-conventions.md).
 Read [manual tagged release](../guides/manual-tagged-release.md) before changing
 release-sensitive prose, and [project memory and run state](../concepts/project-memory-and-run-state.md)
 for the difference between durable evidence and local execution history.
-

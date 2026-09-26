@@ -32,4 +32,3 @@ native Windows support is not claimed.
 If the download fails, stop before changing `PATH` and retry only after the
 archive request succeeds. Continue with [Installation](../start-here/installation.md),
 [upgrading](./upgrading.md), or [exit behavior and diagnostics](../cli/exit-behavior-and-diagnostics.md).
-

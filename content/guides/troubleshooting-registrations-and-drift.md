@@ -26,4 +26,3 @@ skills before forcing any new generated registration. See [validate](../cli/vali
 [sync](../cli/sync.md), and [generated project structure](../cli/generated-project-structure.md)
 for the checked artifact contract. Return to [runtime setup](../start-here/runtime-setup.md)
 after the project is valid again.
-

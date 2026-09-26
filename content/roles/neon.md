@@ -23,4 +23,3 @@ from [Skills](../concepts/skills.md).
 It works adjacent to [The Coder](./coder.md) and [The Daemon](./daemon.md) when
 Mind has defined a shared contract. [The Gatekeeper](./gatekeeper.md) performs
 the next independent review.
-

@@ -24,4 +24,3 @@ review findings, and an approval or revision decision. Its method appears in
 Gatekeeper reviews work from [The Coder](./coder.md), [The Daemon](./daemon.md),
 [The Neon](./neon.md), and [The Grid Master](./grid-master.md), then returns
 findings to the appropriate owner or to [The Nexus](./nexus.md) for integration.
-

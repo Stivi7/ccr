@@ -19,4 +19,3 @@ or verify account capability. Confirm generated state with [validate](../cli/val
 compare the runtime-neutral model in [runtime setup](./runtime-setup.md), and
 use [drift troubleshooting](../guides/troubleshooting-registrations-and-drift.md)
 if a wrapper conflicts with a project-owned file.
-

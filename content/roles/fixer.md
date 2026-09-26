@@ -24,4 +24,3 @@ Fixer works adjacent to [The Nexus](./nexus.md), which routes materially
 incomplete work, and [The Mind](./mind.md), which owns implementation design.
 It never grants itself implementation, push, deployment, or protected-branch
 authority.
-

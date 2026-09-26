@@ -23,4 +23,3 @@ for the distinction.
 Continue to [Installation](./installation.md) for the forthcoming release
 contract, then read [adaptive workflow](../concepts/adaptive-workflow.md) to
 see how Nexus chooses a proportionate path.
-
