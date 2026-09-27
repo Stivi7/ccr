@@ -112,20 +112,17 @@ Then continue to [first project initialization](./first-project-initialization.m
 
 ## Remove an installation
 
-To remove one older release, first confirm that it is not the target of
-`current`, then remove only that release directory:
+To remove one older release, first inspect the available releases and the
+`current` target:
 
 ```bash
 INSTALL_ROOT="$HOME/.local/share/cyberpunk-context-runners"
-CLI_TAG="vMAJOR.MINOR.PATCH"
-RELEASE_DIR="$INSTALL_ROOT/releases/$CLI_TAG"
-
-if [ "$(readlink "$INSTALL_ROOT/current")" = "$RELEASE_DIR" ]; then
-  printf 'Refusing to remove the current release; repoint current first.\n' >&2
-  exit 1
-fi
-rm -rf "$RELEASE_DIR"
+ls -l "$INSTALL_ROOT/releases" "$INSTALL_ROOT/current"
 ```
+
+Choose an older release that is not the `current` target, then delete that
+specific directory in your file manager. Do not delete `current` or a release
+while it is in use.
 
 To remove every installed release, delete the user-owned install root:
 
