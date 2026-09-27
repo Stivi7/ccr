@@ -1,0 +1,28 @@
+{
+  "name": "ccr-header-nav",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./components": "./dist/components/index.js"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "quartz": {
+    "name": "ccr-header-nav",
+    "displayName": "CCR header navigation",
+    "description": "Accessible primary navigation for the CCR documentation site.",
+    "version": "1.0.0",
+    "category": "component",
+    "components": {
+      "CcrHeaderNav": {
+        "name": "CcrHeaderNav",
+        "displayName": "CCR header navigation",
+        "description": "Primary site navigation and external destinations.",
+        "version": "1.0.0"
+      }
+    }
+  }
+}

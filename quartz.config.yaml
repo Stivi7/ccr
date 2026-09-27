@@ -12,33 +12,34 @@ configuration:
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
-    cdnCaching: true
+    # Keep the documentation usable without third-party font requests.
+    fontOrigin: local
+    cdnCaching: false
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: system-ui, sans-serif
+      body: system-ui, sans-serif
+      code: ui-monospace, SFMono-Regular, Menlo, monospace
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#f7fafc"
+        lightgray: "#dbe4eb"
+        gray: "#93a4b5"
+        darkgray: "#405267"
+        dark: "#13202e"
+        secondary: "#056f80"
+        tertiary: "#a12674"
+        highlight: rgba(8, 145, 178, 0.12)
+        textHighlight: "#f9d84a88"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#111b27"
+        lightgray: "#25384a"
+        gray: "#8297a9"
+        darkgray: "#c7d8e5"
+        dark: "#f0f7fb"
+        secondary: "#31d7e8"
+        tertiary: "#f275bb"
+        highlight: rgba(49, 215, 232, 0.16)
+        textHighlight: "#f6d36588"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -81,7 +82,7 @@ plugins:
     enabled: true
     order: 70
   - source: "@quartz-community/latex"
-    enabled: true
+    enabled: false
     options:
       renderEngine: katex
     order: 80
@@ -98,7 +99,7 @@ plugins:
     enabled: false
     order: 92
   - source: "@quartz-community/quartz-fonts"
-    enabled: true
+    enabled: false
   - source: "@quartz-themes/core"
     enabled: false
     options:
@@ -118,11 +119,11 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/cname"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/canvas-page"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
@@ -163,7 +164,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -179,7 +180,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -202,8 +203,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        Report a documentation issue: https://github.com/Stivi7/ccr/issues
     layout:
       position: footer
       priority: 50
@@ -218,11 +218,11 @@ plugins:
       priority: 25
       display: mobile-only
   - source: "@quartz-community/bases-page"
-    enabled: true
+    enabled: false
     options: {}
     order: 50
   - source: "@quartz-community/note-properties"
-    enabled: true
+    enabled: false
     options:
       includeAll: false
       includedProperties:
@@ -239,11 +239,11 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/unlisted-pages"
-    enabled: true
+    enabled: false
     options: {}
     order: 45
   - source: "@quartz-community/encrypted-pages"
-    enabled: true
+    enabled: false
     options:
       iterations: 600000
       passwordField: password
@@ -256,6 +256,11 @@ plugins:
       position: afterBody
       priority: 50
       display: all
+  - source: "./plugins/ccr-header-nav"
+    enabled: true
+    layout:
+      position: header
+      priority: 5
 layout:
   groups:
     toolbar:
