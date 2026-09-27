@@ -1,31 +1,31 @@
-# Generated Team Templates
+# Cyberpunk Context Runners documentation
 
-The CLI copies this tree into a target project. Canonical policy lives under `.cyberpunk/`; runtime adapters only point coding agents to that policy. Plain `cyberpunk init` registers Codex, Claude Code, and Cursor; use `cyberpunk init --runtime codex`, `cyberpunk init --runtime claude`, `cyberpunk init --runtime cursor`, or `cyberpunk init --runtime codex --runtime claude` for a subset, and use `cyberpunk sync` to refresh registrations.
+A Quartz site with interconnected guides, role references, search, backlinks,
+and local/global graphs. This repository contains documentation, not the CLI.
 
-## Ownership
+- [CLI source](https://github.com/Stivi7/cyberpunk-context-runners)
+- [Buy Me a Coffee](https://buymeacoffee.com/noxsteve)
 
-- Framework-owned templates may be refreshed with `cyberpunk init --force`.
-- Existing project files are preserved by ordinary initialization.
-- Extra files under `skills/project/` are user-owned and never overwritten or deleted.
-- `.cyberpunk/runs/` is created locally and ignored rather than shipped as tracked history.
-- `.cyberpunk/generated.yml` records Cyberpunk-owned native assets and their hashes. Modified generated files require `--force`; unknown files at owned paths are collisions rather than overwrite targets.
-- Version-1 configuration migration is idempotent. A stale canonical workflow, roles, or skills requires a reviewed canonical-protocol upgrade before `sync`; ordinary sync preserves those files. `validate` diagnoses the upgrade requirement, configuration, manifests, collisions, and drift, while `status` does not prove live capability.
+## Local development
 
-## Main Areas
+Use Node 22 and npm 10.9.2 or newer compatible versions.
 
-- `.cyberpunk/` — configuration, workflow, project context, and curated memory
-- `agents/` — role contracts, including The Fixer for product discovery and The Nexus for engineering delivery
-- `skills/core/` — portable framework skills, including `requirements-discovery`
-- `skills/project/` — explicitly enabled project skills
-- `specs/`, `plans/`, and `tasks/` — durable artifacts; Fixer PRDs use `specs/YYYY-MM-DD-<topic>-prd.md`
-- `AGENTS.md`, `CLAUDE.md`, and Cursor rules — thin runtime adapters
+```bash
+npm ci
+npm run build -- --serve
+```
 
-## Runtime Registrations
+Open <http://localhost:8080/ccr/>. Run `npm run build` for production output in
+`public/`. The build prepares the local navigation plugin automatically.
+`npm run check` runs TypeScript and formatting checks.
 
-- Codex: `.codex/agents/` and `.agents/skills/`, with a bounded managed block in `AGENTS.md`
-- Claude Code: `.claude/agents/` and `.claude/skills/`, with a bounded managed block in `CLAUDE.md`
-- Cursor: `.cursor/agents/`, `.cursor/skills/`, and `.cursor/rules/cyberpunk.mdc`
+Edit Markdown in `content/`, using relative links to connect related pages.
+Configuration lives in `quartz.config.yaml`; custom styles are in
+`quartz/styles/custom.scss`.
 
-These files are generated pointers, not a second workflow. Inspect them in the relevant runtime or on disk, then give work to Nexus in the runtime you started; the Bash CLI does not start agents. `max_concurrent_agents: 3` is a safety cap. Nexus uses the minimum of the configured maximum, the observed runtime cap, and three; `parallelism: sequential` makes that limit one. Nexus is the sole dispatcher, dependency-bound roles remain sequential, a full queue waits, and worktree isolation does not start agents. Keep interactive Fixer discovery in the parent conversation; non-interactive Fixer analysis may use a native subagent. Native Gatekeeper review is fresh, while parent fallback records `review_context: parent` and a `null` identity. Native model profiles are configured per runtime; a rejected preferred model retries once with `inherit`, with observed execution recorded in local run state and delivery rather than inferred from configuration. Project skills are registered only when explicitly enabled in `skills.enabled_project`.
+## Publication status
 
-The templates do not prescribe a language, framework, package manager, cloud, architecture style, or universal quality threshold. The Operator discovers project-specific commands and conventions from repository evidence.
+The selected CLI tag `v0.4.0` is not published yet. The installation guide
+explains tagged archives and persistent shell PATH setup without claiming the
+archive exists. No deployment workflow is included on this branch; publishing
+the tag and deploying GitHub Pages remain separate steps.

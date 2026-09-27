@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "https://github.com/jackyzha0/quartz",
+    "ref": "v5",
+    "commit": "f1fba3fc55cbf60a60a5d09c95a49c042cdab63a",
+    "packageVersion": "5.0.0",
+    "archiveSha256": "b5b864ebc245a40ec9a6324003f6f5a43bd6386d16464ad505c2cfd0649310bf"
+  },
+  "importedPaths": [
+    {
+      "path": ".node-version",
+      "sha256": "256a8e08ee35cb8ad36ae16385257192c3dbe7d80cfdeff9eaa886531b2f83bc"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "de994f0b60a1afa80c0e821ff17a093bfe17acf8e2760f490433ab9a6891883b"
+    },
+    {
+      "path": ".prettierignore",
+      "sha256": "d7382914713d49d44b738b7db903e932e462666893cf1e2be5c3a96b4db8d135"
+    },
+    {
+      "path": ".prettierrc",
+      "sha256": "ead41fb2c5dc3047643afdeb2396e40e4049f45d70aa6bf761f8e3c6711fbf68"
+    },
+    {
+      "path": "globals.d.ts",
+      "sha256": "8d77d6699277df8caef3e0105fded9c33e0f26ea4df91d37f8fe53f4b467a17f"
+    },
+    {
+      "path": "index.d.ts",
+      "sha256": "e6128075dd3be11726080efb22afbf6ddc8283face0639f17232de366639e0bf"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "bca1aff728d3257b8ca6989f9a4d9913836ab1f1a034505d3e3c481b3dab3e05"
+    },
+    {
+      "path": "package.json",
+      "sha256": "3517dfb25305380039a311646b70c4b421f290c0684baff3c5db59edfab2df45"
+    },
+    {
+      "path": "quartz.config.default.yaml",
+      "sha256": "369873971d4b1dbe57aa7ada06f21f67a50796ef106e6b5c53fb629271e80779"
+    },
+    {
+      "path": "quartz.ts",
+      "sha256": "affd090040d855f1e757c67d33022b4305ed4e30a310e2bcb7d3f3401a1871d1"
+    },
+    {
+      "path": "quartz/bootstrap-cli.mjs",
+      "sha256": "2353843fc9b6647aa1f97dd429b7ac5cf0cc536384106ffcff7b2c73223ba3a5"
+    },
+    {
+      "path": "quartz/bootstrap-worker.mjs",
+      "sha256": "0e6ca7137df25ddda4667dc9cf1d7dc0e8850d3a56a2f192dbde541a79baaf55"
+    },
+    {
+      "path": "quartz/build.ts",
+      "sha256": "32e1a85304f3c620315aaa592f757ccc23ad7a7065bcb6821644155ab974ecbc"
+    },
+    {
+      "path": "quartz/cfg.ts",
+      "sha256": "e3540ad7614038c14beaf613d05bb65eea48673b82ac197a1d9e48d2def7b380"
+    },
+    {
+      "path": "quartz/cli/args.js",
+      "sha256": "7a418c590a5f92f22c4a3a8d0ed3ba16816f57bc846ffca5d28ba72c36540c81"
+    },
+    {
+      "path": "quartz/cli/constants.js",
+      "sha256": "7b79a1285acff91db119673750af76f7be3c0137e018250eb018be9e0bcb99bd"
+    },
+    {
+      "path": "quartz/cli/handlers.js",
+      "sha256": "8a32042530e6ec32375a25057b6eb4bfb5f779ec70cb6b70ff7bfad8b6aa8c1e"
+    },
+    {
+      "path": "quartz/cli/helpers.js",
+      "sha256": "e265b368ad034e7beafa5c40bc7bf764ff8fe3c32932b5125e7e1a39549ce15f"
+    },
+    {
+      "path": "quartz/cli/helpers.test.js",
+      "sha256": "7ea5caf1f33a2255dc4b5bf7fb2b8303289a32a6cc2b991675a8e609ec34be22"
+    },
+    {
+      "path": "quartz/cli/plugin-data.js",
+      "sha256": "f43fed761829643751e0dd94a74f6bbe044ab3142979e8531ca058e200e6a151"
+    },
+    {
+      "path": "quartz/cli/plugin-git-handlers.js",
+      "sha256": "5a453ed6254b46768e457e9448b34dfcd57a8cf24592788bbaf81769f984c422"
+    },
+    {
+      "path": "quartz/cli/templates/blog.yaml",
+      "sha256": "ad23167e6a832ecc6cd3bb33f153502ec888f2932e62964fd7db3781bba080f4"
+    },
+    {
+      "path": "quartz/cli/templates/default.yaml",
+      "sha256": "59b40fd2636b50b7fed23aeccb37dfca31304d30d7df5a178bd803bc119750f7"
+    },
+    {
+      "path": "quartz/cli/templates/obsidian.yaml",
+      "sha256": "31ce0d9a1e8a92715131bdc46d20f2b900f53db50ca94412b177133c4ae7a0ce"
+    },
+    {
+      "path": "quartz/cli/templates/ttrpg.yaml",
+      "sha256": "ae047326dd01fbf1b49cd2ea5c4021e1004d0c6f55fd21aea9176f9dc87d6dd2"
+    },
+    {
+      "path": "quartz/components/Body.tsx",
+      "sha256": "8eda0e0c2b30fe2676866e51fcff2a731d767085162caf034170f8b5e50bd82e"
+    },
+    {
+      "path": "quartz/components/ConditionalRender.tsx",
+      "sha256": "7f3d658c913632b0b198b4b9d06b225787acf6095ada7a2bdbb7fc49d330edff"
+    },
+    {
+      "path": "quartz/components/Date.tsx",
+      "sha256": "d48545cb6951bfda0478e008e921f7d6477c0bf0c1ade7f51cb50f95d4733f45"
+    },
+    {
+      "path": "quartz/components/DesktopOnly.tsx",
+      "sha256": "6654b64bda89aa6b84a52ff68bc0e1a6f2d7fb8d6ebdeedcc7d43728cfd9437d"
+    },
+    {
+      "path": "quartz/components/Flex.tsx",
+      "sha256": "937524545086db7ce7401316d423b2706e438e767d7ad155e12b93d9c0c45f1e"
+    },
+    {
+      "path": "quartz/components/Head.tsx",
+      "sha256": "aee9eac30bcb690765e9333e451928a05a3c3b22c7b62cee961f3d64959f4e36"
+    },
+    {
+      "path": "quartz/components/Header.tsx",
+      "sha256": "88844f8b79ee0f1cb081e5d39f7a4a68c5631d17c547da1cc9fde15367004fe6"
+    },
+    {
+      "path": "quartz/components/MobileOnly.tsx",
+      "sha256": "31471c3d8710a8210fcc41b40596f48db16b6fc62d9970e34d87c52b6b4081bb"
+    },
+    {
+      "path": "quartz/components/PageList.tsx",
+      "sha256": "89a72065697f21d0bb19083a6b0e78e7602947bfa8dd55e35a1d0cb37af8505c"
+    },
+    {
+      "path": "quartz/components/Spacer.tsx",
+      "sha256": "59f88c2de2d766ce2910f72f40b2564613baee1ea0bc68c05597c734b1d79652"
+    },
+    {
+      "path": "quartz/components/external.ts",
+      "sha256": "880e3eab844ca7aaecd0aa1cc02e55c1338604620bc4d1246b67f0eadba567a8"
+    },
+    {
+      "path": "quartz/components/frames/DefaultFrame.tsx",
+      "sha256": "aaf1330bf629661bea6d6ba9d861827c50001cac5927ca56d30e2ef8ce490fff"
+    },
+    {
+      "path": "quartz/components/frames/FullWidthFrame.tsx",
+      "sha256": "662f918df2b55e13dac3372f5d8f8aa51c952571db8b9441d4e400d9a744bc7e"
+    },
+    {
+      "path": "quartz/components/frames/MinimalFrame.tsx",
+      "sha256": "fd2622fe7e545a37faf261bdbee8d0b076add0cfc2408b0de6b5c1a85eafd81f"
+    },
+    {
+      "path": "quartz/components/frames/frames.test.ts",
+      "sha256": "74f9d4dda067943d9d8c0e047afb573ff8f97043a4ab09c8097c69eae456d838"
+    },
+    {
+      "path": "quartz/components/frames/index.ts",
+      "sha256": "41e8d9d3fa2067df6b0b382cfe9d5248a4f3012ee21b5a878c01cc3728170912"
+    },
+    {
+      "path": "quartz/components/frames/registry.ts",
+      "sha256": "ff782653113b1fffc8de6ca9045c8d691e5aad16552a9405223a8bdaf996a2cf"
+    },
+    {
+      "path": "quartz/components/frames/types.ts",
+      "sha256": "64d6cf70ac9b64dc39d76f026d6a23079e2962c1d3a3fcdb3b2efe0f514a3184"
+    },
+    {
+      "path": "quartz/components/index.ts",
+      "sha256": "df8e5245c1cb8f76a729a955e6f6e929d0329671f26cda97d3f9da9b133bb6e1"
+    },
+    {
+      "path": "quartz/components/pages/404.tsx",
+      "sha256": "aef6c7fe385c1050e1ddffd404a2e700a63efe0c0fbbf946f82f88678c01d543"
+    },
+    {
+      "path": "quartz/components/registry.test.ts",
+      "sha256": "9c4710e8497bf659e8dcbc91d330b1c16c95d2706b9724ffc758eafa9e14c002"
+    },
+    {
+      "path": "quartz/components/registry.ts",
+      "sha256": "3044f878c5350e1306c6260370e1723a19d6c44383ab89f5ece992d627cb09e5"
+    },
+    {
+      "path": "quartz/components/renderPage.test.ts",
+      "sha256": "75c13701590e7f9a45aa0ecad06e81aa43911d694fbf7591b78f83c1fd2e5ba8"
+    },
+    {
+      "path": "quartz/components/renderPage.tsx",
+      "sha256": "39a85370ac89041b1d6b40d76b752d2732d6641e84bc249641d92741cbc7af03"
+    },
+    {
+      "path": "quartz/components/scripts/popover.inline.ts",
+      "sha256": "423f861d4b2ed0f941f855ea80fed61732f86f9ca8bb9ce16d4213ce561352d0"
+    },
+    {
+      "path": "quartz/components/scripts/popover.test.ts",
+      "sha256": "1d9ae73aa0ab9cda1d42354993aa74ffd0c987060d992c03fa6c14910bff2c44"
+    },
+    {
+      "path": "quartz/components/scripts/search.test.ts",
+      "sha256": "665d9b85f2b2e1ff275cb09d487a7544766623da53b76b44693a1794f535770a"
+    },
+    {
+      "path": "quartz/components/scripts/spa.inline.ts",
+      "sha256": "6f06efd928af7a8d957922fecf61aac1f5b1be528398c2b46139ced11c5e9520"
+    },
+    {
+      "path": "quartz/components/scripts/util.ts",
+      "sha256": "ade8a70c3eddd0e810894f1ace2e5296a43d86e883d2091a70357b5faf9a51e3"
+    },
+    {
+      "path": "quartz/components/styles/popover.scss",
+      "sha256": "8c06e1338b31b28a7581d1c8a64c878ab97b4423446b03f56c1cd2de1e8738a8"
+    },
+    {
+      "path": "quartz/components/types.ts",
+      "sha256": "421afe32672e5bed56ee01dd5ad8d3b8a62be84be1d0c746d013ca3a3c1a7710"
+    },
+    {
+      "path": "quartz/i18n/index.ts",
+      "sha256": "5084ea210ad768d5b5fa4514e7f7e7db66165488289914380948fc3f8fc8e85b"
+    },
+    {
+      "path": "quartz/i18n/locales/ar-SA.ts",
+      "sha256": "20a504498384568b47b6c05187b53e6d0c639bba8d5e7d54e60a0e04b9ecf6da"
+    },
+    {
+      "path": "quartz/i18n/locales/ca-ES.ts",
+      "sha256": "cd66cd68f0aefe840e2e6038a326b6a21fbe5d0ed877bccc79cd45dc8a85188c"
+    },
+    {
+      "path": "quartz/i18n/locales/cs-CZ.ts",
+      "sha256": "04ea0a7b19d02d0010178ef3cbbb6a186aa406f725fb894992f3d4fa5ec04f0d"
+    },
+    {
+      "path": "quartz/i18n/locales/de-DE.ts",
+      "sha256": "ec040ad64027459990456a024a3c947dc48e198b7db088a09c23c894b6d20647"
+    },
+    {
+      "path": "quartz/i18n/locales/definition.ts",
+      "sha256": "a72cb9dcba1e364983306607109ebf2b8b91add05103419f3383ec92dc53eead"
+    },
+    {
+      "path": "quartz/i18n/locales/en-GB.ts",
+      "sha256": "c000266a11a904a35d1726fdb9ea937a71d642c054065aa37efd1faace9f3f19"
+    },
+    {
+      "path": "quartz/i18n/locales/en-US.ts",
+      "sha256": "aeaa5fa9d70be731a61529e881b223ad22ebfa467f7226e889f8f9a0a85e8190"
+    },
+    {
+      "path": "quartz/i18n/locales/es-ES.ts",
+      "sha256": "41e81c1f4510dae3790d231cc70afb06d5c110239e8c5f6d34353a3f46c20ee7"
+    },
+    {
+      "path": "quartz/i18n/locales/fa-IR.ts",
+      "sha256": "1777814664b1e6d418fb93523a6e6172f9f846a307aabac97937a38617dda430"
+    },
+    {
+      "path": "quartz/i18n/locales/fi-FI.ts",
+      "sha256": "310d6dd8e1778313716473bd9a2e9b824d272eca3a445643f12520c47ab6deb7"
+    },
+    {
+      "path": "quartz/i18n/locales/fr-FR.ts",
+      "sha256": "5361fec8e0e436fa6ea9a7ad453d7cf44c4d12fc2958d082852d7d722cc1b658"
+    },
+    {
+      "path": "quartz/i18n/locales/he-IL.ts",
+      "sha256": "e6959d1eadacc38cafedafb257c9e8e0dd1aac055f82d2c45d58280181a2c718"
+    },
+    {
+      "path": "quartz/i18n/locales/hu-HU.ts",
+      "sha256": "60b1033733c772be657f4eb39df05aec85a1b5f8360453922a831c58c7dfc445"
+    },
+    {
+      "path": "quartz/i18n/locales/id-ID.ts",
+      "sha256": "4e152ae731ec35d1525401fc18d6ad1c66b6a3eecd86be569b32ffdf51ae6bd5"
+    },
+    {
+      "path": "quartz/i18n/locales/it-IT.ts",
+      "sha256": "697bec0915c3de6db2597868f77c212cec56e6c40a47e016f4a5bc61fafd2529"
+    },
+    {
+      "path": "quartz/i18n/locales/ja-JP.ts",
+      "sha256": "dc0ae653dbb557d76b6d2532c7d2fd72f3b992323610e3acbc39660d9a0cfe5b"
+    },
+    {
+      "path": "quartz/i18n/locales/kk-KZ.ts",
+      "sha256": "ef5ff8fc977caba8d7d61ac419d8fd8d83f4bd68948bdf9c58404271c83398c8"
+    },
+    {
+      "path": "quartz/i18n/locales/ko-KR.ts",
+      "sha256": "d44bd3bd3f754c67b49427f27ecde2d9508be37a70874fb708586348355c53b8"
+    },
+    {
+      "path": "quartz/i18n/locales/lt-LT.ts",
+      "sha256": "42e6a6e38210ccfca3f3f86d24ef8d477f09c2adc1a13681198b3e3ea7774d28"
+    },
+    {
+      "path": "quartz/i18n/locales/nb-NO.ts",
+      "sha256": "17d4c5f242827fda50859877153bcfa856b2a02171915a7bd8dc963fe1316bb7"
+    },
+    {
+      "path": "quartz/i18n/locales/nl-NL.ts",
+      "sha256": "d94818447a2d78123f39ec08a939596a276f4aec2ba2ca75b5e2f476e9f9375d"
+    },
+    {
+      "path": "quartz/i18n/locales/pl-PL.ts",
+      "sha256": "f968a0fb34d159d2792453160f1b2babd39a4b023ffbf29591d2139c6342f960"
+    },
+    {
+      "path": "quartz/i18n/locales/pt-BR.ts",
+      "sha256": "f87885bda218f63356b64b8e700f436a42da65677fe209c4d8ab99b119d2fe2a"
+    },
+    {
+      "path": "quartz/i18n/locales/ro-RO.ts",
+      "sha256": "50f60b14ae10f1f07be8edf59e058ae48a681cf3f5941725480017bdbc24829e"
+    },
+    {
+      "path": "quartz/i18n/locales/ru-RU.ts",
+      "sha256": "0c26bf344ba567d80f1d0b7ab0b8e0af7f73b4e0eaf9b64e8a30ffdc2cbaa9b0"
+    },
+    {
+      "path": "quartz/i18n/locales/th-TH.ts",
+      "sha256": "4d37ea278b48a36bd62deda84a3d0e15416a4f086e86b534bc2ea33461008524"
+    },
+    {
+      "path": "quartz/i18n/locales/tr-TR.ts",
+      "sha256": "9e8817b00f12ad494231921ea5a7c52275e25d491fc46cec059febf81583b85e"
+    },
+    {
+      "path": "quartz/i18n/locales/uk-UA.ts",
+      "sha256": "923cb7a1730337824680fd61bc09859997ca77c7454969d98a769cfe9b89be5e"
+    },
+    {
+      "path": "quartz/i18n/locales/vi-VN.ts",
+      "sha256": "8c75ea598261023eb24bf11b9801e4aa351c96c7e531a6ab45c73d76a93c2b3e"
+    },
+    {
+      "path": "quartz/i18n/locales/zh-CN.ts",
+      "sha256": "565f9ba83034d8a1b26a81ba54ff7ea48c29c954dad7fe22c27b3c0994bca53b"
+    },
+    {
+      "path": "quartz/i18n/locales/zh-TW.ts",
+      "sha256": "b182291c887760195445ae8f2b47e2db6cc6fa01a060a9c2b406bac1063a8d42"
+    },
+    {
+      "path": "quartz/plugins/config.ts",
+      "sha256": "bb6e9775c8cdaa231bebf701df8ae4f2da567c7737fb8a7ceec36c0ca455b906"
+    },
+    {
+      "path": "quartz/plugins/emitters/assets.ts",
+      "sha256": "bb434368cf543b8baa382f8a00f49c2bded389d4b4a8063119797fe1661680cc"
+    },
+    {
+      "path": "quartz/plugins/emitters/componentResources.ts",
+      "sha256": "73c8766a6727c97cf332533dc14e61b9384bedfced26c54a1b96136979e6691c"
+    },
+    {
+      "path": "quartz/plugins/emitters/helpers.ts",
+      "sha256": "b0ce6723e189037e2525c83df518fab27fb18ff0ef316ef22a258883fc1e3aac"
+    },
+    {
+      "path": "quartz/plugins/emitters/index.ts",
+      "sha256": "c70e9ae5656c517c4f3e43cb1576de99dfaec8373d61ebb3f334b30fd56b0f78"
+    },
+    {
+      "path": "quartz/plugins/emitters/static.ts",
+      "sha256": "9aaf3826e7b7f96b5d3932534cd59659a219171abe42e75b9b16492fde9dc1f8"
+    },
+    {
+      "path": "quartz/plugins/filters/index.ts",
+      "sha256": "7992a39d6cde5e050eb78461a8bf9ad986175a94826e835c110b3967290bd249"
+    },
+    {
+      "path": "quartz/plugins/index.ts",
+      "sha256": "6357fa372c1737c5f8acaaae78aeb77f6ef985072ed55b786790a449874fc7e4"
+    },
+    {
+      "path": "quartz/plugins/loader/componentLoader.ts",
+      "sha256": "fa60d13285f28ffec7f9b296703ab16c225c6618fd98b7a85d3ef19c82d15f96"
+    },
+    {
+      "path": "quartz/plugins/loader/conditions.ts",
+      "sha256": "ca746263346784649b35e80fa108eef104b98c2413acb483880689e9fdf2ac88"
+    },
+    {
+      "path": "quartz/plugins/loader/config-loader.test.ts",
+      "sha256": "d08c79260b31ca4d8c312856d8dd20da208a6a241344b97b2bf003e3c891e77e"
+    },
+    {
+      "path": "quartz/plugins/loader/config-loader.ts",
+      "sha256": "b917595b08fd1d6fd26ac3ed818c13948bccab040f6f074918994575f3d2fb96"
+    },
+    {
+      "path": "quartz/plugins/loader/frameLoader.ts",
+      "sha256": "47ef9a58d72e4ee201173a9b6a0986b35b7cdf7ea0d46dde3c47cce4c739941b"
+    },
+    {
+      "path": "quartz/plugins/loader/gitLoader.ts",
+      "sha256": "f47393db0909378c0551dd0c73053f414ef38bfa2d294d77ec253b2a904d24ce"
+    },
+    {
+      "path": "quartz/plugins/loader/index.ts",
+      "sha256": "cc4c2186166f7753e65848319bff4295dfa40642bbbd14cb501c0c1e53dabfd1"
+    },
+    {
+      "path": "quartz/plugins/loader/install-plugins.ts",
+      "sha256": "dacca00b546ed021807d905a01c5ab1927d3f2501505b16f47edfe29a3ac5a88"
+    },
+    {
+      "path": "quartz/plugins/loader/loader.ts",
+      "sha256": "cdcd9ae3b17b85057badc4e0806dda6a461f83e690e5afb90ad6a792e5021132"
+    },
+    {
+      "path": "quartz/plugins/loader/types.ts",
+      "sha256": "422dfc2ce0f654f92bbbe6721c667627bfbe890552a9dcbf6ff00ddce5cd5d50"
+    },
+    {
+      "path": "quartz/plugins/pageTypes/404.ts",
+      "sha256": "1daac2e8391002163d6e32a609e744cbfc32e3d87b06551aedf3eb9473b36ecc"
+    },
+    {
+      "path": "quartz/plugins/pageTypes/dispatcher.test.ts",
+      "sha256": "8b3cbca17bcd7a8c3901c7ac7c0f47d5b9458b32d89d2500df68bd00602b4d28"
+    },
+    {
+      "path": "quartz/plugins/pageTypes/dispatcher.ts",
+      "sha256": "877bf85364465734e4c7c711b3b92cde0f134a87616d3d23584eabbf4fac46a1"
+    },
+    {
+      "path": "quartz/plugins/pageTypes/index.ts",
+      "sha256": "5fd2fa0d671dc4afbd63254189460bd23455960eaa97e3cf7fa337cf31c3a2ad"
+    },
+    {
+      "path": "quartz/plugins/pageTypes/matchers.ts",
+      "sha256": "60a53f80765ef87f021e1026ccc2ee0e880ab9e448ad73b6d0c6cee76272a6b2"
+    },
+    {
+      "path": "quartz/plugins/quartz-plugins.schema.json",
+      "sha256": "28a2a2bb5a70eb05688ac8b0dacabfbf27fe3b99fd3bbd52e932c375365c3831"
+    },
+    {
+      "path": "quartz/plugins/transformers/index.ts",
+      "sha256": "7992a39d6cde5e050eb78461a8bf9ad986175a94826e835c110b3967290bd249"
+    },
+    {
+      "path": "quartz/plugins/types.ts",
+      "sha256": "7a44d88eb227db15ced10d5bfea200f74bc14f52d8eb84760b6373fe8b62443c"
+    },
+    {
+      "path": "quartz/plugins/vfile.ts",
+      "sha256": "37d1a1d31c5049f0da9a2258a9e32b92be7898fc8ffbd7c4d005f64fec978844"
+    },
+    {
+      "path": "quartz/processors/emit.ts",
+      "sha256": "992116187e0dd26687c96f0ffeead2d1c9d89edd01589fb00a2a5b52955072ae"
+    },
+    {
+      "path": "quartz/processors/filter.ts",
+      "sha256": "c3ee54724164050830b38fbb68ae99c35194b2060ac367c9b7c2055742dd5008"
+    },
+    {
+      "path": "quartz/processors/parse.ts",
+      "sha256": "76cf9bdcec68dac87e7b73abcbccb5f9232cc0a2a7a4d696d28a62aa61c30254"
+    },
+    {
+      "path": "quartz/static/giscus/dark.css",
+      "sha256": "48b0c163db05f837ea30498e75eeb18e7c252e36a2c3b2d112e943804d6e856c"
+    },
+    {
+      "path": "quartz/static/giscus/light.css",
+      "sha256": "3ff726ca53fd62a9e948ad578dd758fc0c9e2899fdad7f7b8b8690a86867a3bf"
+    },
+    {
+      "path": "quartz/static/icon.png",
+      "sha256": "532d053e33c2c6bdefdd8145996cedc4be2fc32cfdac740c8488749457d131cf"
+    },
+    {
+      "path": "quartz/static/og-image.png",
+      "sha256": "6247780f1b51d0eb99eef6d86a5450e935c0b8053205b4ac83cedb05f0569bd8"
+    },
+    {
+      "path": "quartz/styles/base.scss",
+      "sha256": "0dbbe20680bb5fc4a009d92cbcb9b017b947d1760feabf0e5721cc2926c9adfa"
+    },
+    {
+      "path": "quartz/styles/callouts.scss",
+      "sha256": "a401f9d27da77cb34215d9497c23c78cdbcd76f09315b4235db0d5778b739727"
+    },
+    {
+      "path": "quartz/styles/custom.scss",
+      "sha256": "431cea96eef4d7b9191f1246506e117bc37248d28e10ff3fa0e678ba80f2b5ef"
+    },
+    {
+      "path": "quartz/styles/syntax.scss",
+      "sha256": "f76569760f857fe72c23d74c89e8ab83bc3f0db24b453a4d15842a1435bfb66a"
+    },
+    {
+      "path": "quartz/styles/variables.scss",
+      "sha256": "365594b1baf3194f01a4c0bd6763dd5f0f10703346b7207b3613ccc7669f9436"
+    },
+    {
+      "path": "quartz/util/clone.ts",
+      "sha256": "17330edaf917791ec2468c428ca7a8ee1f3286565f31344e3b0e380c3b9f5f6d"
+    },
+    {
+      "path": "quartz/util/ctx.ts",
+      "sha256": "865e851a246c4886254c26b0faf698beb0561156b9fd5dd9e25b9670ebaad997"
+    },
+    {
+      "path": "quartz/util/emoji.ts",
+      "sha256": "21bc4d10119514ed824897094a9a4a1659df97f2d1b5e165213098875c6766d3"
+    },
+    {
+      "path": "quartz/util/emojimap.json",
+      "sha256": "4a401cda0af66ffc38f5747a0fc6ad578affbda5296e36390daac194d3b39c23"
+    },
+    {
+      "path": "quartz/util/escape.ts",
+      "sha256": "7edda32fef49c8c7456e2c3777bbbfa0e67905aa0e885677165ea25ca4368c94"
+    },
+    {
+      "path": "quartz/util/fileTrie.test.ts",
+      "sha256": "427c7f00ff18e4ec6ff5930177233e433ab25cdc9df2b8258af120a60e238f09"
+    },
+    {
+      "path": "quartz/util/fileTrie.ts",
+      "sha256": "a8f49bdfb47563288cd8fd3ce7571be369888db87c3ee75bbf55d9ebc24e302a"
+    },
+    {
+      "path": "quartz/util/glob.ts",
+      "sha256": "fce246da1c409f254375ea5b2be8c6ee03e018dafc9460805c0ae76a5fbe4db5"
+    },
+    {
+      "path": "quartz/util/jsx.tsx",
+      "sha256": "915f14eee508e4cb0aa3b03aed4e990208633736e8b55a5a2676c06063979c0c"
+    },
+    {
+      "path": "quartz/util/lang.ts",
+      "sha256": "86a760e0c7021c9dfa4a7fd6fb9ba3bc97ca1548645dee380022ed8e5031e0aa"
+    },
+    {
+      "path": "quartz/util/log.ts",
+      "sha256": "73bf4eb2f4a56b15e7022809674fe8716ba6dc24cf5d87e6c581cd8787480c0d"
+    },
+    {
+      "path": "quartz/util/path.test.ts",
+      "sha256": "2a32be4f5cf89d4dec16ebe4f47d45118a065a90ef5afec8ae5089e5543700e1"
+    },
+    {
+      "path": "quartz/util/path.ts",
+      "sha256": "78a7ca13ef13697ee8c9ba7995660f6a30e0cf346371242a834dbcd1c638ece1"
+    },
+    {
+      "path": "quartz/util/perf.ts",
+      "sha256": "26e58d7fb87eca4f365a06d5a46b6f2fbbce08b669ff0b53fa44ba052a3826a9"
+    },
+    {
+      "path": "quartz/util/random.ts",
+      "sha256": "8d092f377061fde94f6b3c0159807e94be413e5dd570d8923ad3e6961fa9f998"
+    },
+    {
+      "path": "quartz/util/resources.tsx",
+      "sha256": "83b0cf2b7e6d7b140b26d0fc2a8db45edd129f072486d3d295de83328d66e013"
+    },
+    {
+      "path": "quartz/util/slugCollisions.test.ts",
+      "sha256": "25fe25b325a25b88209bc672e272c3128802856a25366f1e4edd9acf139b881a"
+    },
+    {
+      "path": "quartz/util/slugCollisions.ts",
+      "sha256": "57995047c2469e63a8741f6fba24e0c46e110fd744431661c68364c759167d5e"
+    },
+    {
+      "path": "quartz/util/sourcemap.ts",
+      "sha256": "077e6f2e5c0b332f8b4c6e62093bbe9d15c2ffb5232db5dad466b30cf631a126"
+    },
+    {
+      "path": "quartz/util/theme.ts",
+      "sha256": "ef7e2d510c800ceab57aa645b09c721c8c2de8f25eca7d7418f1e4bd172e1cc5"
+    },
+    {
+      "path": "quartz/util/trace.ts",
+      "sha256": "b8216e24985fdc0e466638b449573e2e9ac2fece4b0481ee705b9f3852db9aca"
+    },
+    {
+      "path": "quartz/worker.ts",
+      "sha256": "a525b6ac6f9ee3d5935037f16abb4df9962616c1ad5a3b13010aab4c13f9ec3f"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "9d6744ae261a51206fee511d2f9b698f0414d42962a4bb960d87c394c6866085"
+    }
+  ]
+}
