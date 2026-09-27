@@ -6,6 +6,9 @@ This repository selectively includes source files from [Quartz](https://github.c
 commit `f1fba3fc55cbf60a60a5d09c95a49c042cdab63a` (package version `5.0.0`). Quartz is
 copyright (c) 2021 jackyzha0 and is available under the MIT License:
 
+Local modifications: `quartz/components/renderPage.tsx` normalizes the configured local-preview
+base path so preview links work when Quartz is served beneath a subpath.
+
 ```text
 MIT License
 
