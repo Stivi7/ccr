@@ -10,11 +10,12 @@ tags:
 
 # Work packets and result contracts
 
-A work packet makes implementation bounded and reviewable. It names the
-objective, owner, base commit, branch, worktree, allowed scope, dependencies,
-integration contract, skills, acceptance criteria, and verification categories.
-[The Fragmenter](../roles/fragmenter.md) creates these dependency-aware units
-after the plan is approved.
+A work packet makes implementation bounded and reviewable. It lives with the
+task's execution plan and evidence in `.cyberpunk/runs/<task-id>/` and names
+the objective, owner, base commit, branch, worktree, allowed scope,
+dependencies, integration contract, skills, acceptance criteria, and
+verification categories. [The Fragmenter](../roles/fragmenter.md) creates
+these dependency-aware units after the plan is approved.
 
 A worker returns status, changed files, acceptance results, commands run,
 omitted checks, risks, candidate lessons, a result commit, and merge readiness.
