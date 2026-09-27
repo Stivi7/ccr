@@ -27,5 +27,11 @@ Configuration lives in `quartz.config.yaml`; custom styles are in
 
 The selected CLI tag `v0.4.0` is not published yet. The installation guide
 explains tagged archives and persistent shell PATH setup without claiming the
-archive exists. No deployment workflow is included on this branch; publishing
-the tag and deploying GitHub Pages remain separate steps.
+archive exists.
+
+## GitHub Pages
+
+In repository **Settings → Pages**, set the source to **GitHub Actions**. The
+workflow builds the `public/` directory from `main`; only a manual run from
+`main` can deploy it to the `github-pages` environment. Keep that environment
+limited to the `main` branch and configure any required protection rules there.
