@@ -222,7 +222,7 @@ plugins:
     options: {}
     order: 50
   - source: "@quartz-community/note-properties"
-    enabled: false
+    enabled: true
     options:
       includeAll: false
       includedProperties:
@@ -230,7 +230,8 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      # This plugin is the frontmatter parser; keep its optional property panel out of articles.
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
