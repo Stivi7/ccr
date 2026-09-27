@@ -30,9 +30,17 @@ const HeaderNav = () => (
 
 HeaderNav.displayName = "CcrHeaderNav"
 HeaderNav.beforeDOMLoaded = `
-  if (!localStorage.getItem("theme")) {
-    document.documentElement.setAttribute("saved-theme", "dark")
-  }
+  const savedTheme = localStorage.getItem("theme")
+  if (!savedTheme) localStorage.setItem("theme", "dark")
+  document.documentElement.setAttribute("saved-theme", savedTheme ?? "dark")
+`
+HeaderNav.afterDOMLoaded = `
+  const savedTheme = localStorage.getItem("theme")
+  if (!savedTheme) localStorage.setItem("theme", "dark")
+  const activeTheme = savedTheme ?? "dark"
+  document.documentElement.setAttribute("saved-theme", activeTheme)
+  document.body?.classList.remove("theme-dark", "theme-light")
+  document.body?.classList.add("theme-" + activeTheme)
 `
 
 export const CcrHeaderNav = () => HeaderNav
