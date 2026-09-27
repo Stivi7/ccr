@@ -14,10 +14,11 @@ boundaries. Decisions capture accepted rationale; patterns capture proven
 conventions; lessons require evidence, reuse, actionability, and no secrets.
 Stale knowledge is marked superseded rather than silently removed.
 
-Local run state preserves task-specific branches, worktrees, dependency status,
-actual agent identity, model choice, fallback, result commits, reviews, and
-verification. It records observation rather than configuration intent, which is
-why [native dispatch and concurrency](./native-dispatch-and-concurrency.md)
+Local run state lives in `.cyberpunk/runs/<task-id>/` and preserves
+task-specific execution plans, work packets, branches, worktrees, dependency
+status, actual agent identity, model choice, fallback, result commits, reviews,
+and verification evidence. It records observation rather than configuration
+intent, which is why [native dispatch and concurrency](./native-dispatch-and-concurrency.md)
 does not promise a runtime can delegate.
 
 [The Operator](../roles/operator.md) refreshes repository facts, and [The

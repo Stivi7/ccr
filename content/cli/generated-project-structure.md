@@ -10,10 +10,13 @@ tags:
 
 # Generated project structure
 
-Initialization creates canonical workflow, role, skill, memory, specification,
-plan, and task locations, plus managed runtime adapters. It records generated
-asset ownership and hashes so later checks can identify a collision or local
-drift instead of silently overwriting project work.
+Initialization creates canonical workflow, role, skill, memory, and
+specification locations, plus managed runtime adapters. Approved PRDs live in
+`specs/`; execution plans, work packets, and run evidence live in
+`.cyberpunk/runs/<task-id>/`. It records generated asset ownership and hashes
+so later checks can identify a collision or local drift instead of silently
+overwriting project work. Existing legacy `plans/`, `tasks/`, and `examples/`
+directories are project content and are not removed automatically.
 
 Codex uses `.codex/agents/` and `.agents/skills/`; Claude Code uses
 `.claude/agents/` and `.claude/skills/`; Cursor uses `.cursor/agents/`,
