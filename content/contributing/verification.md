@@ -1,6 +1,6 @@
 ---
 title: Test and verification commands
-description: Use repository-native checks and distinguish unavailable checks from passing evidence.
+description: Available local checks and publication boundaries.
 kind: guide
 tags:
   - guide
@@ -10,20 +10,22 @@ tags:
 
 # Test and verification commands
 
-Run the verification commands established by the repository and affected scope;
-do not invent a passing command because an expected tool is absent. Before the
-site foundation and verification packet are integrated, this content packet has
-no package tooling or automated site checker on its base. Its evidence is a
-manual inventory, frontmatter, controlled-tag, relative-link, incoming-link,
-and semantic-link audit.
+After [development setup](./development-setup.md), use these local commands:
 
-After the site verification tooling is integrated, use the documented content,
-build, browser, accessibility, release, and workflow checks from that packet.
-Keep external reachability, archive installation, tag publication, and Pages
-deployment separate: unavailable authority or network evidence is not a pass.
+```bash
+npm run check
+npm run build
+npm run build -- --serve
+```
 
-Record command, exit status, meaningful output, omitted checks, and known
-baseline failures in the [result contract](../concepts/work-packets-and-result-contracts.md).
-The [Gatekeeper](../roles/gatekeeper.md) independently reruns relevant checks;
-then [integration and delivery](../concepts/integration-and-delivery.md) reports
-only what was observed.
+`check` runs TypeScript and formatting checks. `build` emits the site into
+`public/`; `--serve` previews it at `http://localhost:8080/ccr/`. These
+commands do not deploy Pages or verify a published CLI archive.
+
+The CLI has its own tests in its separate repository. The selected `v0.4.0`
+tag is not published yet; see the [manual release process](../guides/manual-tagged-release.md).
+Additional site test and release automation is not included in this branch.
+
+Record observed checks in the [result contract](../concepts/work-packets-and-result-contracts.md).
+See [Gatekeeper](../roles/gatekeeper.md) for the protocol's review role and
+[integration and delivery](../concepts/integration-and-delivery.md) for reporting limitations.
